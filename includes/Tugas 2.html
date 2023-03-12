@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        legend{font-family: Arial, Helvetica, sans-serif; font-size: 25px;font-weight: bolder ; color: midnightblue;}
+    </style>
+    <style>
+        b{ font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;}
+    </style>
+        <style>
+            body {
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          </style>
+</head>
+<body background="Tugas 2.jpg"> <fieldset>
+    <h1 align=center>FORM PENDAFTARAN SEWA KUDA KELILING DUNIA</h1>
+    <form method="POST" action="kirim.php">
+    </form><fieldset style="border: inline block;">
+    <legend>PENDAFTARAN ONLINE</legend>
+    <table bgcolor="#00BFFF" align=center width=90% border=0> 
+<tr align=left>   
+</tr>
+    <tr>
+        <td width=20%><label for="Username"><b>Username</b></label></td>
+        <td width=80%%><input type="text" id="Username" name="Pengguna" required></td>
+    </tr>
+    <tr>
+        <td width=20%><label for="Password"><b>Password</b></label> </td>
+        <td width=80%><input type="password" id="Password" name="Sandi" required> </td>
+    </tr>
+    
+    <td width=20%><label for="E-Mail"><b>E-Mail</b></label></td>
+        <td width=80%><input type="email" id="E-Mail" name="email" required></td>
+    </tr>
+</table>
+</fieldset>
+<fieldset style="border: inline block;">
+<legend style=" color: midnightblue;">DATA DIRI</legend>
+<table bgcolor="#00BFFF" align=center width=90% border=0>
+        <tr>
+            <td width=20%><label for="Nama Lengkap"><b>Nama Lengkap</b></label></td>
+            <td width=80%><input type="text" id="Nama Lengkap" name="namalengkap" required></td>
+        </tr>
+        <tr>
+            <td width=20%><label for="Usia"><b>Usia (dalam Tahun)</b></label></td>
+            <td width=80%><input type="number" id="Usia" name="usia" required></td>
+        </tr>
+        <tr>
+            <td width=20%><label for="Jenis Kelamin"><b>Jenis Kelamin</b></label></td>
+            <td width=80%><select name="Jenis Kelamin">
+                <option value="lakilaki">Laki-Laki</option>
+                <option value="perempuan">Perempuan</option></select>
+            </td>
+        </tr>
+        <tr>
+            <td width=20%><label for="No. Telp"><b>No. Telp</b></label></td>
+            <td width=80%><input type="text" id="No. Telp" name="Nomor Telepon" required></td>
+        </tr>
+        <tr>
+            <td width=20%><label for="Alamat"><b>Alamat</b></label></td>
+            <td width=80%><input type="text" id="Alamat" name="Alamat" required></td>
+        </tr></table></fieldset>
+    <fieldset style="border: inline block;">
+<legend>LAMA PENYEWAAN</legend>
+<table bgcolor="#00BFFF" align=center width=90% border=0>
+    <tr>
+        <td width=20%><label for="Tanggal Sewa"><b>Tanggal Sewa</b></label></td>
+        <td width=80%><input type="date" id="Tanggal Sewa" name="tanggalsewa" required></td>
+    </tr>
+    <tr>
+        <td width=20%><label for="Tanggal Kembali"><b>Tanggal Kembali</b></label></td>
+        <td width=80%><input type="date" id="Tanggal Kembali" name="tanggalkembali" required></td>
+    </tr></table></fieldset>
+<fieldset style="border: inline block;">
+    <legend style=" color: midnightblue;">JENIS KUDA</legend>
+<table bgcolor="#00BFFF" align=center width=90% border=0>
+    </tr>
+    <tr>
+        <td width=20%><label for="Tipe Kuda"><b>Tipe Kuda</b></label></td>
+        <td width=80%>
+        <input type="radio" id=kudabalap name=JenisKuda><label for="Kuda Balap">Kuda Balap</label><br>
+        <input type="radio" id=kudaperang name=JenisKuda><label for="Kuda Perang">Kuda Perang</label><br>
+        <input type="radio" id=kudaterbang name=JenisKuda><label for="Kuda Terbang">Kuda Terbang</label><br>
+        <input type="radio" id=kudalumping name=JenisKuda><label for="Kuda Lumping">Kuda Lumping</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td width=20%><label fo="Warna Kuda"><b>Warna Kuda</b></label></td>
+        <td width=80%>
+            <input type="radio" id=putih name=warnakuda><label for="Putih">Putih</label><br>
+            <input type="radio" id=coklat name=warnakuda><label for="Putih">Coklat</label><br>
+            <input type="radio" id=hitam name=warnakuda><label for="Putih">Hitam</label><br>
+        </td>
+    </tr></table>
+    </fieldset>
+    <fieldset style="border: inline block;">
+            <legend>KEGIATAN SELAMA PENYEWAAN</legend>
+    <table  bgcolor="#00BFFF" align=center width=90% border=0>
+        <tr>
+            <td width=20%><label for="Medan yang Dilalui Kuda"><b>Medan yang Dilalui Kuda</b></td>
+            <td width=80%>
+                <input type="checkbox" id="padang Rumput" name=padangrumput><label for="Padang Rumput">Padang Rumput</label><br>
+                <input type="checkbox" id="Pedesaan" name=pedesaan><label for="Pedesaan">Pedesaan</label><br>
+                <input type="checkbox" id="hutan" name=hutan><label for="Hutan">Hutan</label><br>
+                <input type="checkbox" id="gunung" name=gunung><label for="Pegunung">Pegunungan</label><br>
+                <input type="checkbox" id="lembah" name=lembah><label for="Lembah">Lembah</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td width=20%><label for="Aktivitas Kuda"><b>Aktivitas Kuda</b></td>
+            <td width=80%>
+                <input type="checkbox" id="jalan santai" name=aktif1><label for="Jalan Santai">Jalan Santai</label><br>
+                <input type="checkbox" id="pengangkutan barang" name=aktif2><label for="Pengangkutan Barang">Pengangkutan Barang</label><br>
+                <input type="checkbox" id="hiking" name=aktif3><label for="Hiking">Hiking</label><br>
+                <input type="checkbox" id="perlombaan" name=aktif4><label for="Perlombaan">Perlombaan</label><br>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+</fieldset>
+<br> <br>
+<input type="submit" value="DAFTAR" style="background: rgb(0, 159, 252); font-weight: bold;">
+<input type=reset value="RESET">
+</body>
+</html>
